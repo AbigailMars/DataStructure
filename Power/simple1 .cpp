@@ -1,8 +1,7 @@
-int countOnes(unsigned int n ){
-	int ones = 0;
-	while(0 < n ){
-	count += (n&1);
-	n >>= 1;
+int Power2(int n ){
+  int pow = 1;
+	while( 0 < n--){
+		pow <<= 1;
 	}
-	return ones;
-}
+	return pow      
+} // O(n) = O(2^r) r为n的比特位数
