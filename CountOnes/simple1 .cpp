@@ -5,4 +5,4 @@ int countOnes(unsigned int n ){
 	n >>= 1;
 	}
 	return ones;
-}
+}// O(log(n))
