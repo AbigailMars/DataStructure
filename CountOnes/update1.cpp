@@ -5,4 +5,4 @@ int countOne1(unsigned int n ){
     n &= n-1;
 	}
     return ones;
-}//O（ 
+}//O(countOne1(n))
