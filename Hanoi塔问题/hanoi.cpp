@@ -1,8 +1,8 @@
-int countOnes(unsigned int n ){
-	int ones = 0;
-	while(0 < n ){
-	count += (n&1);
-	n >>= 1;
-	}
-	return ones;
+
+ void hanoi ( int n, Stack<Disk>& Sx, Stack<Disk>& Sy, Stack<Disk>& Sz ) {
+   if ( n > 0 )   { //没有盘子剩余时，不再递归
+       hanoi ( n - 1, Sx, Sz, Sy ); //递归：将Sx上的n - 1只盘子，借助Sz中转，移到Sy上
+       move ( Sx, Sz ); //直接：将Sx上最后一只盘子，移到Sz上
+       hanoi ( n - 1, Sy, Sx, Sz ); //递归：将Sy上的n - 1只盘子，借助Sx中转，移到Sz上
+    }
 }
