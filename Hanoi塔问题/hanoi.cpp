@@ -5,4 +5,6 @@
        move ( Sx, Sz ); //直接：将Sx上最后一只盘子，移到Sz上
        hanoi ( n - 1, Sy, Sx, Sz ); //递归：将Sy上的n - 1只盘子，借助Sx中转，移到Sz上
     }
-}
+}// O(2^n) 
+
+// https://www.youtube.com/watch?v=1QgJEcnsqsQ李永乐关于汉诺塔问题的讲解
